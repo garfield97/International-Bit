@@ -42,7 +42,8 @@ temp_bit is a stringstream and will need to be converted into an integer.
 Then the frequency of the corresponding integer value will increment by 1.
 The frequencies of all discrete values wil be stored in the array freq[].
 The total size of the data sequence can be found by adding up all the frequencies.
-Information entropy will be calculated from the frequencies by the formula S=-∑_i▒〖P_i 〖log_2⁡P〗_i 〗
+Information entropy will be calculated from the frequencies by the formula ![Uploading Screen Shot 2019-06-27 at 19.29.08.png…]()
+
 
 How to use
 By altering the value of variable length, it can check the discrete values with different byte length, e.g. length = 1 represents measuring frequencies of 1-Byte values.
