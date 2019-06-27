@@ -48,12 +48,9 @@ Information entropy will be calculated from the frequencies by the formula
 <img width="161" alt="Screen Shot 2019-06-27 at 19 29 08" src="https://user-images.githubusercontent.com/33202105/60291058-068ee580-9912-11e9-8f04-890817b776fa.png">
 
 
-How to use
-
 By altering the value of variable length, it can check the discrete values with different byte length, e.g. length = 1 represents measuring frequencies of 1-Byte values.
 The frequencies of discrete values are stored in the array freq[].
 
-Prerequisite
 File "aug_bitmap_full.txt" needs to be included in the same directory as the program.
 
 
