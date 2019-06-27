@@ -18,8 +18,8 @@ int main()
 	int length = 1;
 	check_freq_n (length);							   //generate array freq[]
 
-	int non_zero_count = 0;
-	double total_freq = 0;
+	int non_zero_count = 0;							   //counting the number of existing discrete values
+	double total_freq = 0;							   //counting the total number of Bytes for the data sequence
 
 	for (int i = 0; i < (sizeof(freq)/4); i++){
 		if (freq[i] >= 1){
@@ -60,7 +60,12 @@ void check_freq_n(int n){
 	map.open("aug_bitmap_full.txt");
 	if (map.is_open()){
 		cout << "map opened" << endl;
+		//reading in the each line from the mapping library
 		while (getline(map,line)){
+			//read in a byte of data whenever 0x is detected
+			//store n bytes string data into temp_bit, where n is the specified length of bytes to be measured,
+			//and convert temp_bit from string to integer value
+			//the frequency of the corresponding integer value will increment by 1
 			for (int k = 0; k < line.size(); k++){
 				if (bit_count == n * 2){
 					bit_count = 0;
