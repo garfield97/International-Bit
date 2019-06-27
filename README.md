@@ -1,5 +1,5 @@
 # International:bit
-![62118709_2315448518668246_6497954149236211712_n](https://user-images.githubusercontent.com/33202105/60213851-40051980-985c-11e9-911f-734eebb23552.jpg)
+![62184062_305163543720234_4359735231024988160_n](https://user-images.githubusercontent.com/33202105/60281321-a8a3d300-98fc-11e9-84c8-6a7891ec31eb.jpg)
 
 
 We are the international:bit, a project on behalf of the BBC micro:bit to make an extension board that will support the display of non-latin characters. The extension board includes a 12x12 LED matrix with the relevant display driver chip as well as memory extension modules in order to fit in extensive bitmap font libraries for the different languages we wish to implement. The repo contains all the software libraries and drivers in order to get the extension board running with the microbit through ARM mbed. To learn more about the project, here is a link to the report.
@@ -44,5 +44,6 @@ File "aug_bitmap_full.txt" needs to be included in the same directory as the pro
 ## Licensing
 Everything is built upon the BBC micro:bit and subject to the same copyright licensing standards(https://github.com/bbcmicrobit). All the software is open licensed except for the zpix font used which is subject to their own licensing policies outlined in their repository (https://github.com/SolidZORO/zpix-pixel-font).
 
+![patrixkjun](https://user-images.githubusercontent.com/33202105/60281225-73978080-98fc-11e9-9789-9e029f930563.jpg)
 
 
