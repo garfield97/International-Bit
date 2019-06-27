@@ -6,7 +6,7 @@ We are the international:bit, a project on behalf of the BBC micro:bit to make a
 
 ## Getting Started
 
-This respostiroy has various things including:
+This respository consists of the following:
  - Source code for the display driver/functions in the relevant directory
  - Program to parse in the BDF format into C++ readable format
  - Tools for compression and analysis
