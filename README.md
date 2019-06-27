@@ -30,13 +30,13 @@ Here come the steps to use the parsing program:
 5. The outputs stored in 'mapping.txt' are in a compressed form. Each character takes 18 bytes.
 
 
-## How to use the compression tools
+## How to use the compression analysis tool
 The program is for finding out 3 important information from the data sequence:
 1. Total size of the data sequence
 2. Frequencies of discrete values in the data sequence
-3. Information Entropy
+3. Information entropy of the data sequence
 
-Since each byte of data is prefixed with '0x' in the bitmap, a byte of data is read in if '0x' is detected. 
+A byte of data is read in when '0x' is detected as each byte of data is prefixed with '0x' in the bitmap.
 The bytes of data are stored in temp_bit until it reaches the length specified.
 temp_bit is a stringstream and will need to be converted into an integer.
 Then the frequency of the corresponding integer value will increment by 1.
