@@ -31,15 +31,26 @@ Here come the steps to use the parsing program:
 
 
 ## How to use the compression tools
-The program is for finding out 3 important information of the data sequence.
+The program is for finding out 3 important information from the data sequence:
 1. Total size of the data sequence
-2. Frequencies of discrete values in the data sequence.
+2. Frequencies of discrete values in the data sequence
+3. Information Entropy
+
+Since each byte of data is prefixed with '0x' in the bitmap, a byte of data is read in if '0x' is detected. 
+The bytes of data are stored in temp_bit until it reaches the length specified.
+temp_bit is a stringstream and will need to be converted into an integer.
+Then the frequency of the corresponding integer value will increment by 1.
+The frequencies of all discrete values wil be stored in the array freq[].
+The total size of the data sequence can be found by adding up all the frequencies.
+Information entropy will be calculated from the frequencies by the formula S=-∑_i▒〖P_i 〖log_2⁡P〗_i 〗
+
+How to use
 By altering the value of variable length, it can check the discrete values with different byte length, e.g. length = 1 represents measuring frequencies of 1-Byte values.
 The frequencies of discrete values are stored in the array freq[].
-3. Information Entropy
-Information entropy is calculated from the frequencies of discrete values.
 
+Prerequisite
 File "aug_bitmap_full.txt" needs to be included in the same directory as the program.
+
 
 ## Licensing
 Everything is built upon the BBC micro:bit and subject to the same copyright licensing standards(https://github.com/bbcmicrobit). All the software is open licensed except for the zpix font used which is subject to their own licensing policies outlined in their repository (https://github.com/SolidZORO/zpix-pixel-font).
